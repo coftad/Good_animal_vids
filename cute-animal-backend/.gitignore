@@ -1,0 +1,8 @@
+# Node dependencies
+node_modules/
+
+# API keys and environment files
+.env
+
+# Build artifacts
+dist/

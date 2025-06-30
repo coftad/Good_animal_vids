@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/videos')
+    axios.get('https://good-animal-vids-4.onrender.com/api/videos')
       .then(res => {
         setVideos(res.data);
         setLoading(false);

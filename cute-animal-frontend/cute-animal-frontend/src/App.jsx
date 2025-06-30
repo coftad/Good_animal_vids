@@ -9,7 +9,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    axios.get('https://good-animal-vids-4.onrender.com/api/videos')
+    axios.get('https://good-animal-vids-4.onrender.com/api/videos?q=${encodeURIComponent(searchTerm)}')
       .then(res => {
         setVideos(res.data);
         setLoading(false);
